@@ -1,6 +1,7 @@
 import React from "react";
 import "../App.css";
 
+
 function HomePage() {
 
     return(
@@ -12,6 +13,12 @@ function HomePage() {
             <h1 id="about-me-header">Chef Jay Doshi</h1>
             <p id="about-me-body">Chef Jay Doshi cooks exquisite cuisines with a twist.</p>
             </div>
+            <div className="food-imgs">
+            <img className="food-img" src={process.env.PUBLIC_URL+"/assets/food-1.png"} alt="food-chops"></img>
+            <img className="food-img" src={process.env.PUBLIC_URL+"/assets/food-2.png"} alt="sliced-steak"></img>
+            </div>
+            
+           
             
 
         </>

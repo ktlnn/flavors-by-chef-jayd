@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Parisienne&display=swap");
 
+
 @media only screen and (max-width: 768px) {
   /* navbar */
   .navbar {
@@ -111,6 +112,17 @@
     text-align: center;
     font-family: 'Oswald', sans-serif;
   }
+
+  /* homepage food images */
+  .food-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    border: solid 1px;
+    margin-top: 20px;
+    box-shadow: 0px 0px 10px 0px;
+  }
 }
 
 @media only screen and (min-width: 992px){
@@ -207,11 +219,34 @@
   }
 
   /* about me (jay doshi) */
-  .about-me{
+  #about-me-img{
     display: block;
     margin-left: auto;
     margin-right: auto;
 
+  }
+
+  #about-me-header{
+    text-align: center;
+    font-family: 'Parisienne', cursive;
+  }
+
+  #about-me-body{
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+  }
+
+  /* homepage food images */
+  .food-imgs{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+  }
+
+  .food-img{
+    border: solid 1px;
+    box-shadow: 0px 0px 10px 0px;
   }
 }
 
