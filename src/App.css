@@ -1,7 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200&family=Parisienne&display=swap");
 
-
 @media only screen and (max-width: 768px) {
+  /* background image */
+
   /* navbar */
   .navbar {
     display: flex;
@@ -9,7 +10,6 @@
     align-items: center;
     cursor: pointer;
     background-color: white;
-
   }
 
   ul.nav-menu-items {
@@ -17,6 +17,8 @@
     width: 100%;
     background-color: white;
     height: 100vh;
+    margin-top: 0;
+    
   }
 
   .nav-menu {
@@ -28,11 +30,13 @@
     left: -100%;
     transition: 850ms;
     width: 100%;
+    
   }
 
-  .nav-menu.active{
+  .nav-menu.active {
     left: 0;
     transition: 350ms;
+    
   }
 
   #hamburger {
@@ -42,7 +46,7 @@
     color: #808588;
   }
 
-  li.nav-text{
+  span.nav-text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -50,15 +54,32 @@
     padding: 5px 0px 5px 10px;
     font-size: 25px;
     
-  }
-
-  .nav-text a {
-    text-decoration: none;
     color: #808588;
   }
 
-  .nav-text a:hover {
+  a:link,a:visited,a:active div span.nav-text{
+    text-decoration: none;
+  }
+
+  a:link,a:visited,a:active,a:hover div span.nav-text:hover {
+    text-decoration: none;
     color: #03123d;
+  }
+
+  div.dropdown-icon{
+    display: block;
+    position: relative;
+    
+  }
+
+  span.nav-subtext{
+    background-color:#aeb5b9;
+    color: white;
+    font-family: 'Oswald', sans-serif;
+    display: flex;
+    font-size: 25px;
+    padding: 10px;
+    width: 30%;
   }
 
   /* x button when navbar is open */
@@ -70,7 +91,7 @@
     color: #808588;
   }
 
-  .social-icons{
+  .social-icons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -79,8 +100,8 @@
     font-size: 2rem;
   }
 
-  .contact-info{
-    font-family: 'Oswald', sans-serif;
+  .contact-info {
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-align: center;
   }
@@ -94,8 +115,8 @@
     top: 0;
   }
 
-   /* about me (jay doshi) */
-   #about-me-img{
+  /* about me (jay doshi) */
+  #about-me-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -103,18 +124,18 @@
     margin-top: 20px;
   }
 
-  #about-me-header{
+  #about-me-header {
     text-align: center;
-    font-family: 'Parisienne', cursive;
+    font-family: "Parisienne", cursive;
   }
 
-  #about-me-body{
+  #about-me-body {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
 
   /* homepage food images */
-  .food-img{
+  .food-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -125,14 +146,14 @@
   }
 }
 
-@media only screen and (min-width: 992px){
+@media only screen and (min-width: 992px) {
+  /* navbar */
   .navbar {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
     background-color: white;
-
   }
 
   ul.nav-menu-items {
@@ -140,6 +161,8 @@
     width: 15%;
     background-color: white;
     height: 100vh;
+    margin-bottom: 0;
+    margin-top: 12%;
   }
 
   .nav-menu {
@@ -149,39 +172,37 @@
     position: fixed;
     flex-direction: column;
     top: 0;
-    left: -100%;
-    transition: 850ms;
     width: 100%;
   }
 
-  .nav-menu.active{
+  .nav-menu.active {
     left: 0;
-    transition: 350ms;
   }
 
   #hamburger {
-    padding: 10px;
-    border-style: solid;
-    border-radius: 10px;
-    color: #808588;
+    display: none;
   }
 
-  li.nav-text{
+  #x-bar {
+    display: none;
+  }
+
+  a:link,a:visited,a:active,a:hover span.nav-text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: "Oswald", sans-serif;
-    padding: 5px 0px 5px 10px;
+    padding: 15px 0px 15px 10px;
     font-size: 25px;
-    
   }
 
-  .nav-text a {
+  a:link,a:visited,a:active,a:hover span.nav-text:hover {
     text-decoration: none;
     color: #808588;
   }
 
-  .nav-text a:hover {
+  a:link,a:visited,a:active,a:hover span.nav-text:hover {
+    text-decoration: none;
     color: #03123d;
   }
 
@@ -194,7 +215,10 @@
     color: #808588;
   }
 
-  .social-icons{
+  /* navbar dropdown */
+  
+
+  .social-icons {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -203,8 +227,8 @@
     font-size: 2rem;
   }
 
-  .contact-info{
-    font-family: 'Oswald', sans-serif;
+  .contact-info {
+    font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-align: center;
   }
@@ -212,43 +236,47 @@
   /* logo */
   .logo {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 20px;
+    margin-top: 10px;
+    float: left;
     width: 15%;
     top: 0;
+    position: fixed;
   }
 
   /* about me (jay doshi) */
-  #about-me-img{
+
+  #about-me-img {
     display: block;
     margin-left: auto;
     margin-right: auto;
-
   }
 
-  #about-me-header{
+  #about-me-header {
     text-align: center;
-    font-family: 'Parisienne', cursive;
+    font-family: "Parisienne", cursive;
   }
 
-  #about-me-body{
+  #about-me-body {
     text-align: center;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
   }
 
   /* homepage food images */
-  .food-imgs{
+  .food-imgs {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-end;
     align-items: center;
     flex-direction: row;
   }
 
-  .food-img{
+  .food-img {
     border: solid 1px;
+    margin-left: 30px;
+    margin-right: 100px;
     box-shadow: 0px 0px 10px 0px;
   }
 }
 
-
-
+@media only screen and (min-width: 1200px) {
+}

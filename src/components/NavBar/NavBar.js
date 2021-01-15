@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import * as FaIcons from "react-icons/fa";
 import * as AiIcons from "react-icons/ai";
 import { NavBarItems } from "./NavBarItems";
+import SubMenu from "./SubMenu";
 import "../../App.css";
 
 function NavBar() {
@@ -20,19 +21,13 @@ function NavBar() {
       <nav className={sidebar ? "nav-menu active" : "nav-menu"}>
         <ul className="nav-menu-items" onClick={showSidebar}>
           <li className="navbar-toggle">
-            <Link to="#" className="menu-bars">
+            <Link to="#" id="x-bar" className="menu-bars">
               <AiIcons.AiOutlineClose />
             </Link>
           </li>
-          {NavBarItems.map((item, index) => {
-            return (
-              <li key={index} className={item.classname}>
-                <Link to={item.path}>
-                  <span>{item.title}</span>
-                </Link>
-              </li>
-            );
-          })}
+         {NavBarItems.map((item, index) => {
+           return <SubMenu className="nav-text" item={item} key={index} />
+         })}
           <div className="social-icons">
             <li>
               <AiIcons.AiOutlineInstagram />

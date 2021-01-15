@@ -2,7 +2,7 @@ import React from "react";
 
 import "../App.css";
 
-function Lunch() {
+function Team() {
 
     return(
         <>
@@ -12,4 +12,4 @@ function Lunch() {
     )
 }
 
-export default Lunch;
+export default Team;

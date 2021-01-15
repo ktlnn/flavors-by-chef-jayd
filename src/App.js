@@ -7,17 +7,21 @@ import Lunch from "./pages/lunch";
 import Dinner from "./pages/dinner";
 import Takeout from "./pages/takeout";
 import Catering from "./pages/catering";
-
+import Team from "./pages/team";
 
 function App() {
   return (
     
       <Router>
       <div className="App">
+      
       <NavBar />
         <Switch>
           <Route exact path="/">
             <Homepage />
+          </Route>
+          <Route exact path="/team">
+            <Team />
           </Route>
           <Route exact path="/lunch">
             <Lunch />

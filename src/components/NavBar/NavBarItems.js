@@ -1,30 +1,50 @@
-  
-
+import * as RiIcons from "react-icons/ri";
 
 export const NavBarItems = [
-    {
-        title: "Home",
-        path: "/",
-        classname: "nav-text"
-    },
-    {
-        title: "Lunch",
+  {
+    title: "Home",
+    path: "/",
+    classname: "nav-text",
+  },
+  {
+    title: "Meet the Team",
+    path: "/team",
+  },
+  {
+    title: "Lunch",
+    path: "/lunch",
+    classname: "nav-text",
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: "French",
         path: "/lunch",
-        classname: "nav-text"
-    },
-    {
-        title: "Dinner",
+      },
+      {
+        title: "Asian",
+        path: "/lunch",
+      },
+    ],
+  },
+  {
+    title: "Dinner",
+    path: "/dinner",
+    iconClosed: <RiIcons.RiArrowDownSFill />,
+    iconOpened: <RiIcons.RiArrowUpSFill />,
+    subNav: [
+      {
+        title: "French",
         path: "/dinner",
-        classname: "nav-text"
-    },
-    {
-        title: "Takeout & Delivery",
-        path: "/takeout",
-        classname: "nav-text"
-    },
-    {
-        title: "Catering & Private Events",
-        path: "/catering",
-        classname: "nav-text"
-    },
-]
+      },
+    ],
+  },
+  {
+    title: "Takeout & Delivery",
+    path: "/takeout",
+  },
+  {
+    title: "Catering & Private Events",
+    path: "/catering",
+  },
+];
