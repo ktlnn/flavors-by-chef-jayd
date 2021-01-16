@@ -18,7 +18,6 @@
     background-color: white;
     height: 100vh;
     margin-top: 0;
-    
   }
 
   .nav-menu {
@@ -30,13 +29,11 @@
     left: -100%;
     transition: 850ms;
     width: 100%;
-    
   }
 
   .nav-menu.active {
     left: 0;
     transition: 350ms;
-    
   }
 
   #hamburger {
@@ -53,29 +50,30 @@
     font-family: "Oswald", sans-serif;
     padding: 5px 0px 5px 10px;
     font-size: 25px;
-    
     color: #808588;
   }
 
-  a:link,a:visited,a:active div span.nav-text{
+  a:link,
+  a:visited,
+  a:active div span.nav-text {
     text-decoration: none;
   }
 
-  a:link,a:visited,a:active,a:hover div span.nav-text:hover {
+  a:link,
+  a:visited div span.nav-text:hover {
     text-decoration: none;
     color: #03123d;
   }
 
-  div.dropdown-icon{
-    display: block;
-    position: relative;
-    
+  span.dropdown-icon {
+    margin-left: 2px;
+    display: inline-flex;
   }
 
-  span.nav-subtext{
-    background-color:#aeb5b9;
+  span.nav-subtext {
+    background-color: #aeb5b9;
     color: white;
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     display: flex;
     font-size: 25px;
     padding: 10px;
@@ -187,23 +185,44 @@
     display: none;
   }
 
-  a:link,a:visited,a:active,a:hover span.nav-text {
+  .nav-text span.nav-text {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     font-family: "Oswald", sans-serif;
     padding: 15px 0px 15px 10px;
     font-size: 25px;
-  }
-
-  a:link,a:visited,a:active,a:hover span.nav-text:hover {
-    text-decoration: none;
     color: #808588;
+   
   }
 
-  a:link,a:visited,a:active,a:hover span.nav-text:hover {
+  a:link,
+  a:visited span.nav-text:hover {
     text-decoration: none;
-    color: #03123d;
+    color: black;
+  }
+
+  span.dropdown-icon {
+    margin-left: 2px;
+    display: inline-flex;
+  }
+
+ span.nav-subtext {
+    background-color: #aeb5b9;
+    color: white;
+    font-family: "Oswald", sans-serif;
+    display: block;
+    font-size: 25px;
+    padding: 10px;
+    width: 70%;
+    position: static;
+    top: 0;
+  }
+
+  a:link,
+  a:visited span.nav-subtext:hover{
+    text-decoration: none;
+    color: black;
   }
 
   /* x button when navbar is open */
@@ -216,7 +235,6 @@
   }
 
   /* navbar dropdown */
-  
 
   .social-icons {
     display: flex;
