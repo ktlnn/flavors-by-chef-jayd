@@ -156,14 +156,14 @@
 
   ul.nav-menu-items {
     list-style: none;
-    width: 15%;
+    width: 16%;
     background-color: white;
     height: 100vh;
     margin-bottom: 0;
-    margin-top: 12%;
+    margin-top: 0;
   }
 
-  .nav-menu {
+  nav.nav-menu {
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -171,6 +171,7 @@
     flex-direction: column;
     top: 0;
     width: 100%;
+    margin-top: 0;
   }
 
   .nav-menu.active {
@@ -193,7 +194,6 @@
     padding: 15px 0px 15px 10px;
     font-size: 25px;
     color: #808588;
-   
   }
 
   a:link,
@@ -205,6 +205,10 @@
   span.dropdown-icon {
     margin-left: 2px;
     display: inline-flex;
+  }
+  
+  .nav-menu-text{
+    margin-top: 75%;
   }
 
  span.nav-subtext {
@@ -264,20 +268,33 @@
 
   /* about me (jay doshi) */
 
+
   #about-me-img {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 18%;
+  }
+
+  .about-me{
+    display: flex;
+    justify-content: flex-start;
   }
 
   #about-me-header {
     text-align: center;
     font-family: "Parisienne", cursive;
+    font-size: 60px;
+  }
+
+  .about-me-text{
+    margin-top: 100px;
   }
 
   #about-me-body {
     text-align: center;
     font-family: "Oswald", sans-serif;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-size: 20px;
   }
 
   /* homepage food images */

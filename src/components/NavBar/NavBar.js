@@ -25,9 +25,12 @@ function NavBar() {
               <AiIcons.AiOutlineClose />
             </Link>
           </li>
-         {NavBarItems.map((item, index) => {
+          <div className="nav-menu-text">
+          {NavBarItems.map((item, index) => {
            return <SubMenu className="nav-text" item={item} key={index} />
          })}
+          </div>
+         
           <div className="social-icons">
             <li>
               <AiIcons.AiOutlineInstagram />
