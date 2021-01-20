@@ -12,14 +12,14 @@ function HomePage() {
       <div className="about-me">
         <img
           id="about-me-img"
-          src={process.env.PUBLIC_URL + "/assets/jay-doshi.png"}
+          src={process.env.PUBLIC_URL + "/assets/placeholder.jpg"}
           alt="jay-doshi"
         ></img>
         <div className="about-me-text">
-        <h1 id="about-me-header">Chef Jay Doshi</h1>
+        <h1 id="about-me-header" className="fancy"><span>Chef Jay Doshi</span></h1>
         <p id="about-me-body">
           In my perspective, food is not just a substance for absorption. I
-          approach food by formulation an idea and then devise a concept of what
+          approach food by formulating an idea and then devise a concept of what
           can manfiest from my creation. Then the chef becomes the artist, and
           forms the art on the plate as a pure blank canvas with each color
           intricately balanced. I evaluate each flavor, each spice, the

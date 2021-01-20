@@ -9,7 +9,7 @@
     justify-content: flex-start;
     align-items: center;
     cursor: pointer;
-    background-color: white;
+    
   }
 
   ul.nav-menu-items {
@@ -38,7 +38,7 @@
 
   #hamburger {
     padding: 10px;
-    border-style: solid;
+    border: solid 2px #808588;
     border-radius: 10px;
     color: #808588;
   }
@@ -71,7 +71,7 @@
   }
 
   span.nav-subtext {
-    background-color: #aeb5b9;
+    background-color: #aeb5b99a;
     color: white;
     font-family: "Oswald", sans-serif;
     display: flex;
@@ -125,11 +125,40 @@
   #about-me-header {
     text-align: center;
     font-family: "Parisienne", cursive;
+    text-shadow: -1px 0 rgb(155, 155, 177), 0 1px black, 1px 0 black, 0 -1px  rgb(155, 155, 177);
   }
+    /* double bars on either side of about-me header */
+    /* .fancy span {
+      display: inline-block;
+      position: relative;  
+    }
+  
+    .fancy span:before,
+    .fancy span:after {
+      content: "";
+      position: absolute;
+      height: 5px;
+      border-bottom: 1px solid black;
+      border-top: 1px solid black;
+      margin-top: 15px;
+      width:60px;
+    }
+    .fancy span:before {
+      right: 100%;
+      margin-right: 8px;
+    }
+    .fancy span:after {
+      left: 100%;
+      margin-left: 8px;
+    } */
 
   #about-me-body {
     text-align: center;
     font-family: "Oswald", sans-serif;
+    margin-right: 10%;
+    margin-left: 10%;
+    font-size: 18px;
+
   }
 
   /* homepage food images */
@@ -141,6 +170,13 @@
     border: solid 1px;
     margin-top: 20px;
     box-shadow: 0px 0px 10px 0px;
+  }
+
+  #footer{
+    text-align: center;
+    padding: 15px;
+    color: #808588;
+    font-family: 'Oswald', sans-serif;
   }
 }
 
@@ -161,6 +197,7 @@
     height: 100vh;
     margin-bottom: 0;
     margin-top: 0;
+    border: solid 0.5px gray;
   }
 
   nav.nav-menu {
@@ -212,7 +249,7 @@
   }
 
  span.nav-subtext {
-    background-color: #aeb5b9;
+    background-color: #aeb5b99a;
     color: white;
     font-family: "Oswald", sans-serif;
     display: block;
@@ -253,6 +290,7 @@
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-align: center;
+    margin-right: 20px;
   }
 
   /* logo */
@@ -272,17 +310,46 @@
   #about-me-img {
     display: block;
     margin-left: 18%;
+    width: 95%;
+    height: 50vh;
   }
 
   .about-me{
     display: flex;
-    justify-content: flex-start;
+    flex-direction: column;
   }
 
   #about-me-header {
     text-align: center;
     font-family: "Parisienne", cursive;
     font-size: 60px;
+    margin-left: 16%;
+    margin-top: 0;
+    text-shadow: -1.5px 0 rgb(155, 155, 177), 0 1.5px black, 1.5px 0 black, 0 -1.5px  rgb(155, 155, 177);
+  }
+  /* double bars on either side of about-me header */
+  .fancy span {
+    display: inline-block;
+    position: relative;  
+  }
+
+  .fancy span:before,
+  .fancy span:after {
+    content: "";
+    position: absolute;
+    height: 10px;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
+    margin-top: 30px;
+    width:180px;
+  }
+  .fancy span:before {
+    right: 100%;
+    margin-right: 15px;
+  }
+  .fancy span:after {
+    left: 100%;
+    margin-left: 15px;
   }
 
   .about-me-text{
@@ -292,9 +359,9 @@
   #about-me-body {
     text-align: center;
     font-family: "Oswald", sans-serif;
-    margin-left: 20px;
-    margin-right: 20px;
-    font-size: 20px;
+    margin-left: 30%;
+    margin-right: 15%;
+    font-size: 25px;
   }
 
   /* homepage food images */

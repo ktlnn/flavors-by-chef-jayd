@@ -8,6 +8,7 @@ import Dinner from "./pages/dinner";
 import Takeout from "./pages/takeout";
 import Catering from "./pages/catering";
 import Team from "./pages/team";
+import Footer from "./components/Footer"
 
 function App() {
   return (
@@ -36,6 +37,7 @@ function App() {
             <Catering />
           </Route>
         </Switch>
+        <Footer />
       </div>
       </Router>
   );
