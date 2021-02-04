@@ -1,5 +1,4 @@
-
-import './App.css';
+import "./App.css";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Homepage from "./pages/homepage";
@@ -8,15 +7,14 @@ import Dinner from "./pages/dinner";
 import Takeout from "./pages/takeout";
 import Catering from "./pages/catering";
 import Team from "./pages/team";
-import Footer from "./components/Footer"
+import Footer from "./components/Footer";
 
 function App() {
   return (
-    
-      <Router>
+    <Router>
       <div className="App">
-      
-      <NavBar />
+        <NavBar />
+
         <Switch>
           <Route exact path="/">
             <Homepage />
@@ -39,7 +37,7 @@ function App() {
         </Switch>
         <Footer />
       </div>
-      </Router>
+    </Router>
   );
 }
 
