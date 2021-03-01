@@ -43,7 +43,7 @@ function NavBar() {
             </li>
           </div>
           <div className="contact-info">
-            <li>Address: 406 Tompkins St., City of Orange, NJ</li>
+            <li>Address: 90 E Halsey Rd Ste 333 #1263 Parsippany NJ, 07054</li>
             <li>Phone Number: (732)447-6381</li>
           </div>
         </ul>

@@ -1,4 +1,4 @@
-import * as RiIcons from "react-icons/ri";
+
 
 export const NavBarItems = [
   {
@@ -10,35 +10,35 @@ export const NavBarItems = [
     title: "Meet the Team",
     path: "/team",
   },
-  {
-    title: "Lunch",
-    path: "/lunch",
-    classname: "nav-text",
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-    subNav: [
-      {
-        title: "French",
-        path: "/lunch",
-      },
-      {
-        title: "Asian",
-        path: "/lunch",
-      },
-    ],
-  },
-  {
-    title: "Dinner",
-    path: "/dinner",
-    iconClosed: <RiIcons.RiArrowDownSFill />,
-    iconOpened: <RiIcons.RiArrowUpSFill />,
-    subNav: [
-      {
-        title: "French",
-        path: "/dinner",
-      },
-    ],
-  },
+  // {
+  //   title: "Lunch",
+  //   path: "/lunch",
+  //   classname: "nav-text",
+  //   iconClosed: <RiIcons.RiArrowDownSFill />,
+  //   iconOpened: <RiIcons.RiArrowUpSFill />,
+  //   subNav: [
+  //     {
+  //       title: "French",
+  //       path: "/lunch",
+  //     },
+  //     {
+  //       title: "Asian",
+  //       path: "/lunch",
+  //     },
+  //   ],
+  // },
+  // {
+  //   title: "Dinner",
+  //   path: "/dinner",
+  //   iconClosed: <RiIcons.RiArrowDownSFill />,
+  //   iconOpened: <RiIcons.RiArrowUpSFill />,
+  //   subNav: [
+  //     {
+  //       title: "French",
+  //       path: "/dinner",
+  //     },
+  //   ],
+  // },
   {
     title: "Takeout & Delivery",
     path: "/takeout",

@@ -1,23 +1,10 @@
-import React, { useRef, useEffect } from "react";
-import { TweenMax, Power3 } from "gsap";
+import React from "react";
+
 
 import "../App.css";
 
 function HomePage() {
-let jayAnimate = useRef(null);
 
-useEffect(() => {
-  console.log(jayAnimate);
-  TweenMax.to(
-    jayAnimate,
-    1,
-    {
-      opacity: 1,
-      y: -30,
-      ease: Power3.easeOut
-    }
-  )
-}, []);
 
   return (
     <>
@@ -33,7 +20,7 @@ useEffect(() => {
           alt="jay-doshi"
         ></img>
         <div className="about-me-text">
-          <h1 id="about-me-header" ref={el => {jayAnimate = el}} className="fancy">
+          <h1 id="about-me-header" className="fancy">
             <span>Chef Jay Doshi</span>
           </h1>
           <p id="about-me-body">

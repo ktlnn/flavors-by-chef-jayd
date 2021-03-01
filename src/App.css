@@ -128,13 +128,19 @@
     margin-right: auto;
     width: 80%;
     margin-top: 20px;
+    margin-bottom: 20px;
   }
 
-  #about-me-header {
+  h1#about-me-header,
+  span#about-me-header {
     text-align: center;
     font-family: "Parisienne", cursive;
     text-shadow: -1px 0 rgb(155, 155, 177), 0 1px black, 1px 0 black, 0 -1px  rgb(155, 155, 177);
+    padding: 20px;
+    margin-bottom: 0px;
   }
+
+  
     /* double bars on either side of about-me header */
     /* .fancy span {
       display: inline-block;
@@ -166,8 +172,10 @@
     margin-right: 10%;
     margin-left: 10%;
     font-size: 18px;
-
+    margin-top: 0px;
   }
+
+ 
 
   /* homepage food images */
   .food-img {
@@ -737,7 +745,7 @@
     display: block;
     margin-left: 18%;
     width: 95%;
-    height: 50vh;
+    height: 45vh;
   }
 
   .about-me{
@@ -815,4 +823,8 @@
 }
 
 @media only screen and (min-width: 1200px) {
+  #about-me-img{
+    display: block;
+    margin-left: 15%;
+  }
 }
