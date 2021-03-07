@@ -33,12 +33,12 @@ function NavBar() {
          
           <div className="social-icons">
             <li>
-              <a href="https://www.instagram.com/chef_jaydoshi/?hl=en">
+              <a href="https://www.instagram.com/chef_jaydoshi/?hl=en" target="_blank" rel="noreferrer">
               <AiIcons.AiOutlineInstagram />
               </a>
             </li>
             <li>
-              <a href="mailto:katelynnn@flavorsjayd.com">
+              <a href="mailto:katelynnn@flavorsjayd.com" target="_blank" rel="noreferrer">
               <AiIcons.AiOutlineMail />
               </a> 
             </li>
