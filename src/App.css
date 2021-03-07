@@ -831,6 +831,12 @@
 
   /* online order page */
 
+ .takeout-options:hover .takeout-img {
+    -webkit-filter: blur(2px);
+    filter: blur(2px);
+   
+  }
+
   .takeout-options{
     display: flex;
     justify-content: center;
