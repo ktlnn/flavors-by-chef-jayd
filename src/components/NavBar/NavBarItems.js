@@ -9,6 +9,7 @@ export const NavBarItems = [
   {
     title: "Meet the Team",
     path: "/team",
+    classname: "nav-text",
   },
   // {
   //   title: "Lunch",
@@ -42,13 +43,16 @@ export const NavBarItems = [
   {
     title: "Order Online",
     path: "/takeout",
+    classname: "nav-text",
   },
   {
     title: "Event Services",
     path: "/catering",
+    classname: "nav-text",
   },
   {
     title: "Portfolio",
     path: "/portfolio",
+    classname: "nav-text",
   }
 ];
