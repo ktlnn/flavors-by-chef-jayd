@@ -40,11 +40,15 @@ export const NavBarItems = [
   //   ],
   // },
   {
-    title: "Takeout & Delivery",
+    title: "Order Online",
     path: "/takeout",
   },
   {
-    title: "Catering & Private Events",
+    title: "Event Services",
     path: "/catering",
   },
+  {
+    title: "Portfolio",
+    path: "/portfolio",
+  }
 ];

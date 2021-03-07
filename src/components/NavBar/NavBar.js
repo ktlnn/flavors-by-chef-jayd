@@ -33,18 +33,19 @@ function NavBar() {
          
           <div className="social-icons">
             <li>
+              <a href="https://www.instagram.com/chef_jaydoshi/?hl=en">
               <AiIcons.AiOutlineInstagram />
+              </a>
             </li>
             <li>
-              <AiIcons.AiOutlineFacebook />
-            </li>
-            <li>
-              <AiIcons.AiOutlineInstagram />
+              <a href="mailto:katelynnn@flavorsjayd.com">
+              <AiIcons.AiOutlineMail />
+              </a> 
             </li>
           </div>
           <div className="contact-info">
             <li>Address: 90 E Halsey Rd Ste 333 #1263 Parsippany NJ, 07054</li>
-            <li>Phone Number: (732)447-6381</li>
+            <li>Phone Number: (732) 447-6381</li>
           </div>
         </ul>
       </nav>

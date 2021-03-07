@@ -301,6 +301,11 @@
     font-size: 2rem;
   }
 
+  div.social-icons a{
+    text-decoration: none;
+    color: #808588;
+  }
+
   .contact-info {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -513,6 +518,11 @@
     font-size: 2rem;
   }
 
+  div.social-icons a{
+    text-decoration: none;
+    color: #808588;
+  }
+
   .contact-info {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
@@ -626,11 +636,12 @@
 
   ul.nav-menu-items {
     list-style: none;
-    width: 16%;
+    width: 13%;
     background-color: white;
     height: 100vh;
     margin-bottom: 0;
     margin-top: 0;
+    margin-right: 0;
     border: solid 0.5px gray;
   }
 
@@ -679,7 +690,7 @@
   }
   
   .nav-menu-text{
-    margin-top: 75%;
+    margin-top: 95%;
   }
 
  span.nav-subtext {
@@ -718,13 +729,19 @@
     color: #808588;
     padding: 20px;
     font-size: 2rem;
+    margin-top: 70px;
+    margin-right: 25px;
+  }
+  div.social-icons a{
+    text-decoration: none;
+    color: #808588;
   }
 
   .contact-info {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-align: center;
-    margin-right: 20px;
+    margin-right: 28px;
   }
 
   /* logo */
@@ -733,25 +750,24 @@
     margin-left: 20px;
     margin-top: 10px;
     float: left;
-    width: 15%;
+    width: 13%;
     top: 0;
     position: fixed;
   }
 
   /* about me (jay doshi) */
 
-
   #about-me-img {
     display: block;
-    margin-left: 18%;
-    width: 95%;
-    height: 45vh;
+    overflow: hidden;
+    margin: 0px;
+    width: 85%;
+    height: 40vh;
+    padding: 0;
+   
   }
 
-  .about-me{
-    display: flex;
-    flex-direction: column;
-  }
+
 
   #about-me-header {
     text-align: center;
@@ -813,6 +829,89 @@
     box-shadow: 0px 0px 10px 0px;
   }
 
+  /* online order page */
+
+  .takeout-options{
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    padding: 10px;
+  }
+
+
+
+  #wraps-btn{
+    position: absolute;
+    top: 45%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  #soups-btn{
+    position: absolute;
+    top: 125%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  #specials-btn{
+    position: absolute;
+    top: 205%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  #dessert-btn{
+    position: absolute;
+    top: 285%;
+    left: 57%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
   #footer{
     text-align: center;
     margin-left: 15%;
@@ -820,6 +919,8 @@
     color: #808588;
     font-family: 'Oswald', sans-serif;
   }
+
+
 }
 
 @media only screen and (min-width: 1200px) {

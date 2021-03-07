@@ -16,7 +16,7 @@ function HomePage() {
       <div className="about-me">
         <img
           id="about-me-img"
-          src={process.env.PUBLIC_URL + "/assets/placeholder.jpg"}
+          src={process.env.PUBLIC_URL + "/assets/placeholder_resized.jpg"}
           alt="jay-doshi"
         ></img>
         <div className="about-me-text">
