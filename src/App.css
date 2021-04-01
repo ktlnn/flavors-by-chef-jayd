@@ -831,6 +831,10 @@
 
   /* online order page */
 
+  .takeout-img{
+    padding: 50px;
+  }
+
  .takeout-options:hover .takeout-img {
     -webkit-filter: blur(2px);
     filter: blur(2px);
@@ -840,34 +844,21 @@
   .takeout-options{
     display: flex;
     justify-content: center;
+    flex-direction: row;
     margin-left: 15%;
     padding: 10px;
   }
 
 
-
-  #wraps-btn{
-    position: absolute;
-    top: 45%;
-    left: 57%;
-    transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
-    font-size: 16px;
-    padding: 12px 24px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    color: white;
-    text-decoration: none;
-    font-size: 50px;
+  #soups-img{
+    height: 35vh;
+    width: 40vh;
   }
 
   #soups-btn{
     position: absolute;
-    top: 125%;
-    left: 57%;
+    top: 23%;
+    left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-size: 16px;
@@ -880,12 +871,40 @@
     color: white;
     text-decoration: none;
     font-size: 50px;
+  }
+
+  #wraps-img{
+    height: 35vh;
+    width: 40vh;
+  }
+
+  #wraps-btn{
+    position: absolute;
+    top: 23%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    font-size: 16px;
+    padding: 12px 24px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    color: white;
+    text-decoration: none;
+    font-size: 50px;
+  }
+
+  #specials-img{
+    height: 35vh;
+    width: 40vh;
   }
 
   #specials-btn{
     position: absolute;
-    top: 205%;
-    left: 57%;
+    top:70%;
+    left: 45%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-size: 16px;
@@ -900,10 +919,15 @@
     font-size: 50px;
   }
 
+  #dessert-img{
+    height: 35vh;
+    width: 40vh;
+  }
+
   #dessert-btn{
     position: absolute;
-    top: 285%;
-    left: 57%;
+    top: 70%;
+    left: 70%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     font-size: 16px;
