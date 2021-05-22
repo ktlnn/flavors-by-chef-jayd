@@ -6,11 +6,7 @@ export const NavBarItems = [
     path: "/",
     classname: "nav-text",
   },
-  {
-    title: "Meet the Team",
-    path: "/team",
-    classname: "nav-text",
-  },
+ 
   // {
   //   title: "Lunch",
   //   path: "/lunch",
@@ -46,8 +42,8 @@ export const NavBarItems = [
     classname: "nav-text",
   },
   {
-    title: "Event Services",
-    path: "/catering",
+    title: "Event Inquiries",
+    path: "/eventinquiries",
     classname: "nav-text",
   },
   {

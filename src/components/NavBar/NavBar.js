@@ -38,7 +38,7 @@ function NavBar() {
               </a>
             </li>
             <li>
-              <a href="mailto:katelynnn@flavorsjayd.com" target="_blank" rel="noreferrer">
+              <a href="mailto:orders@flavorsjayd.com" target="_blank" rel="noreferrer">
               <AiIcons.AiOutlineMail />
               </a> 
             </li>

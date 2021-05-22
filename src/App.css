@@ -833,9 +833,11 @@
 
   .takeout-img{
     padding: 50px;
+    height: 35vh;
+    width: 40vh;
   }
 
- .takeout-options:hover .takeout-img {
+ .takeout-options:hover .takeout-img{
     -webkit-filter: blur(2px);
     filter: blur(2px);
    
@@ -850,12 +852,7 @@
   }
 
 
-  #soups-img{
-    height: 35vh;
-    width: 40vh;
-  }
-
-  #soups-btn{
+  #chicken-btn{
     position: absolute;
     top: 23%;
     left: 45%;
@@ -873,12 +870,8 @@
     font-size: 50px;
   }
 
-  #wraps-img{
-    height: 35vh;
-    width: 40vh;
-  }
 
-  #wraps-btn{
+  #steak-btn{
     position: absolute;
     top: 23%;
     left: 70%;
@@ -896,12 +889,8 @@
     font-size: 50px;
   }
 
-  #specials-img{
-    height: 35vh;
-    width: 40vh;
-  }
 
-  #specials-btn{
+  #seafood-btn{
     position: absolute;
     top:70%;
     left: 45%;
@@ -919,12 +908,7 @@
     font-size: 50px;
   }
 
-  #dessert-img{
-    height: 35vh;
-    width: 40vh;
-  }
-
-  #dessert-btn{
+  #wraps-btn{
     position: absolute;
     top: 70%;
     left: 70%;
@@ -949,6 +933,39 @@
     color: #808588;
     font-family: 'Oswald', sans-serif;
   }
+
+  /* contact form - event inquiries page */
+
+  #event-title{
+    text-align: center;
+    margin-left: 16%;
+    font-size: 60px;
+    font-family: "Parisienne", cursive;
+  }
+
+  .contact-form{
+    display: block;
+    text-align: center;
+    padding: 30px;
+    margin-left: 43.6%;
+    margin-right: auto;
+    width: 25%;
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    background-color: rgba(1, 1, 12, 0.281);
+  }
+
+  label{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    margin-left: 32.5%;
+  }
+
+
+ 
+
+
 
 
 }

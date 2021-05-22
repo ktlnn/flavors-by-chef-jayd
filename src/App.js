@@ -3,10 +3,9 @@ import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import NavBar from "./components/NavBar/NavBar";
 import Homepage from "./pages/homepage";
 import Takeout from "./pages/takeout";
-import Catering from "./pages/catering";
-import Team from "./pages/team";
 import Portfolio from "./pages/portfolio";
 import Footer from "./components/Footer";
+import EventInquiries from "./pages/eventInquiries";
 
 
 function App() {
@@ -18,14 +17,11 @@ function App() {
           <Route exact path="/">
             <Homepage />
           </Route>
-          <Route exact path="/team">
-            <Team />
-          </Route>
           <Route exact path="/takeout">
             <Takeout />
           </Route>
-          <Route exact path="/catering">
-            <Catering />
+          <Route exact path="/eventinquiries">
+            <EventInquiries />
           </Route>
           <Route exact path="/portfolio">
             <Portfolio />
