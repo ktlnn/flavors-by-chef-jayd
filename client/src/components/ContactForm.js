@@ -24,8 +24,8 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <form onSubmit={handleSubmit}>
-      <div className="contact-form">
+    <form className="contact-form" onSubmit={handleSubmit}>
+      <div className="contact-input">
         <label id="name-input" htmlFor="name">
           Name
         </label>
@@ -35,30 +35,33 @@ const ContactForm = () => {
           id="name"
           required
           placeholder="First and Last Name"
+          style={{ cursor: "pointer", pointerEvents: "auto" }}
         />
       </div>
-      <div className="contact-form">
+      <div className="contact-input">
         <label id="email-input" htmlFor="email">
           Email
         </label>
 
-        <input type="email" id="email" required />
+        <input type="email" id="email" required placeholder="example@example.com"/>
       </div>
-      <div className="contact-form">
+      <div className="contact-input">
         <label id="phone-input" htmlFor="phone">
           Phone Number
         </label>
 
-        <input type="phone" id="phone" required />
+        <input type="phone" id="phone" required placeholder="(123) 456-7890"/>
       </div>
-      <div className="contact-form">
+      <div className="contact-input">
         <label id="message-input" htmlFor="message">
           Message
         </label>
 
-        <textarea id="message" required />
+        <textarea id="message" required placeholder=""/>
       </div>
-      <button type="submit">{status}</button>
+      <button id="contact-btn" type="submit">
+        {status}
+      </button>
     </form>
   );
 };
