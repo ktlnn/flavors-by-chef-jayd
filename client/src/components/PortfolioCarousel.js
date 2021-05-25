@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import { Card } from "react-bootstrap";
 import "../../app.css";
-import { Link } from "react-router-dom";
-import TvShowJumbotron from "../TvShowJumbotron/TvShowJumbotron";
 
-function EmilyOutfitCard(props) {
-  const emilyArray = props.showOutfits.filter((i) => {
-    return i.category === "emily";
+
+
+function PortfolioOutfitCard(props) {
+  const portfolioArray = props.showOutfits.filter((i) => {
+    return i.category === "food";
   });
 
-  const emilyLength = emilyArray.map((imageEl) => 100 / emilyArray);
+  const portfolioLength = portfolioArray.map((imageEl) => 100 / portfolioArray);
 
-  const [emilyWidthState, setEmilyWidthState] = useState(emilyLength);
+  const [portfolioWidthState, setPortfolioWidthState] = useState(portfolioLength);
 
-  const emilyiD = emilyArray.map((e) => e._id);
+  const portfolioId = portfolioArray.map((e) => e._id);
 
 
   
@@ -27,17 +27,17 @@ function EmilyOutfitCard(props) {
           marginBottom: "20px",
         }}
       >
-        {emilyWidthState.map((cardWidth, i) => (
+        {portfolioWidthState.map((cardWidth, i) => (
           <Card
             key={"card-" + i}
             className="full-outfit"
             style={{ width: cardWidth + "%", transition: "width 1s" }}
             onMouseOver={() => {
               let min = 5;
-              let variance = 100 - emilyWidthState.length * min;
+              let variance = 100 - portfolioWidthState.length * min;
               let nWidth = [];
               let maxValue = -3;
-              emilyWidthState.forEach((width, x) => {
+              portfolioWidthState.forEach((width, x) => {
                 nWidth.push(Math.abs(x - i));
                 maxValue =
                   maxValue < Math.abs(x - i) ? Math.abs(x - i) : maxValue;
@@ -51,22 +51,15 @@ function EmilyOutfitCard(props) {
               nWidth = nWidth.map((nw, i) => {
                 return scale * nw + min;
               });
-              setEmilyWidthState(nWidth);
+              setPortfolioWidthState(nWidth);
             }}
           >
-            <Link
-              to={"/outfits/" + emilyiD[i]}
-              onClick={
-                (props.handleEmilyChangeOfPage &&
-                  (() => props.handleEmilyChangeOfPage(emilyiD[i]))) ||
-                (() => {})
-              }
-            >
+            
               <Card.Img
                 variant="top"
-                src={process.env.PUBLIC_URL + emilyArray[i].outfitImage}
+                src={process.env.PUBLIC_URL + portfolioId[i].portfolioImage}
               />
-            </Link>
+           
           </Card>
         ))}
       </div>
@@ -76,4 +69,4 @@ function EmilyOutfitCard(props) {
   );
 }
 
-export default EmilyOutfitCard;
+export default PortfolioOutfitCard;
