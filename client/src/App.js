@@ -6,6 +6,7 @@ import Takeout from "./pages/takeout";
 import Portfolio from "./pages/portfolio";
 import Footer from "./components/Footer";
 import EventInquiries from "./pages/eventInquiries";
+import Chicken from "./pages/chicken";
 
 
 function App() {
@@ -19,6 +20,9 @@ function App() {
           </Route>
           <Route exact path="/takeout">
             <Takeout />
+          </Route>
+          <Route exact path="/takeout/chicken">
+            <Chicken />
           </Route>
           <Route exact path="/eventinquiries">
             <EventInquiries />

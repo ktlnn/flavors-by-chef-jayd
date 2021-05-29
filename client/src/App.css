@@ -836,12 +836,17 @@
     padding: 50px;
     height: 35vh;
     width: 40vh;
+    position:relative;
+    z-index: 0;
   }
 
- .takeout-options:hover .takeout-img{
+ #chicken:hover #chicken-img.takeout-img,
+ #steak:hover #steak-img.takeout-img,
+ #seafood:hover #seafood-img.takeout-img,
+ #wraps:hover #wraps-img.takeout-img{
     -webkit-filter: blur(2px);
     filter: blur(2px);
-   
+  border: 1px white;
   }
 
   .takeout-options{
@@ -850,7 +855,6 @@
     flex-direction: row;
     margin-left: 15%;
     padding: 10px;
-  
   }
 
 
@@ -870,6 +874,10 @@
     color: white;
     text-decoration: none;
     font-size: 50px;
+  }
+
+  #chicken-btn:hover{
+    border: 1px white;
   }
 
 
@@ -928,6 +936,8 @@
     font-size: 50px;
   }
 
+  
+
   #footer{
     display: block;
     text-align: center;
@@ -939,6 +949,16 @@
     font-family: 'Oswald', sans-serif;
     bottom: 0;
     left: 0;
+  }
+
+  /* portfolio */
+
+  .portfolio-cards{
+    position: relative;
+    z-index: 0;
+    margin-left:auto;
+    margin-right: auto;
+   
   }
 
   /* contact form - event inquiries page */
@@ -963,7 +983,6 @@
     font-size: 20px;
     position: relative;
   }
-
   
 
   .contact-form{
