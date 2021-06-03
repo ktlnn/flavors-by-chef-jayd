@@ -56,7 +56,7 @@ function Takeout() {
             src={process.env.PUBLIC_URL + "/assets/wraps-2.png"}
             alt="wraps"
           ></img>
-          <a id="wraps-btn" href="/takeout/warps">
+          <a id="wraps-btn" href="/takeout/wraps">
             W R A P S
           </a>
         </div>

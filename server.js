@@ -1,7 +1,7 @@
 const express = require("express");
 const router = express.Router();
 const cors = require("cors");
-const nodemailer = require("nodemailer");
+// const nodemailer = require("nodemailer");
 const mongoose = require("mongoose");
 const PORT = process.env.PORT || 3001;
 const app = express();

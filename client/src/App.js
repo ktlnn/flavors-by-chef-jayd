@@ -7,7 +7,9 @@ import Portfolio from "./pages/portfolio";
 import Footer from "./components/Footer";
 import EventInquiries from "./pages/eventInquiries";
 import Chicken from "./pages/chicken";
-
+import Steak from "./pages/steak";
+import Seafood from "./pages/seafood";
+import Wraps from "./pages/wraps";
 
 function App() {
   return (
@@ -23,6 +25,15 @@ function App() {
           </Route>
           <Route exact path="/takeout/chicken">
             <Chicken />
+          </Route>
+          <Route exact path="/takeout/steak">
+            <Steak />
+          </Route>
+          <Route exact path="/takeout/seafood">
+            <Seafood />
+          </Route>
+          <Route exact path="/takeout/wraps">
+            <Wraps />
           </Route>
           <Route exact path="/eventinquiries">
             <EventInquiries />

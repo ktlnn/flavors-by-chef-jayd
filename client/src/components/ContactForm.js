@@ -24,45 +24,57 @@ const ContactForm = () => {
     alert(result.status);
   };
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
-      <div className="contact-input">
-        <label id="name-input" htmlFor="name">
-          Name
-        </label>
+    <div className="contact-page">
+      <form className="contact-form" onSubmit={handleSubmit}>
+        <div className="contact-input">
+          <label id="name-input" htmlFor="name">
+            Name
+          </label>
 
-        <input
-          type="text"
-          id="name"
-          required
-          placeholder="First and Last Name"
-          style={{ cursor: "pointer", pointerEvents: "auto" }}
-        />
-      </div>
-      <div className="contact-input">
-        <label id="email-input" htmlFor="email">
-          Email
-        </label>
+          <input
+            type="text"
+            id="name"
+            required
+            placeholder="First and Last Name"
+            style={{ cursor: "pointer", pointerEvents: "auto" }}
+          />
+        </div>
+        <div className="contact-input">
+          <label id="email-input" htmlFor="email">
+            Email
+          </label>
 
-        <input type="email" id="email" required placeholder="example@example.com"/>
-      </div>
-      <div className="contact-input">
-        <label id="phone-input" htmlFor="phone">
-          Phone Number
-        </label>
+          <input
+            type="email"
+            id="email"
+            required
+            placeholder="example@example.com"
+          />
+        </div>
+        <div className="contact-input">
+          <label id="phone-input" htmlFor="phone">
+            Phone Number
+          </label>
 
-        <input type="phone" id="phone" required placeholder="(123) 456-7890"/>
-      </div>
-      <div className="contact-input">
-        <label id="message-input" htmlFor="message">
-          Message
-        </label>
+          <input
+            type="phone"
+            id="phone"
+            required
+            placeholder="(123) 456-7890"
+          />
+        </div>
+        <div className="contact-input">
+          <label id="message-input" htmlFor="message">
+            Message
+          </label>
 
-        <textarea id="message" required placeholder=""/>
-      </div>
-      <button id="contact-btn" type="submit">
-        {status}
-      </button>
-    </form>
+          <textarea id="message" required placeholder="" />
+        </div>
+        <button id="contact-btn" type="submit">
+          {status}
+        </button>
+      </form>
+    </div>
   );
 };
 
