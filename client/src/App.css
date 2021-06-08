@@ -56,7 +56,7 @@
     justify-content: flex-start;
     align-items: center;
     font-family: "Oswald", sans-serif;
-    padding: 5px 0px 5px 10px;
+    padding: 20px 0px 5px 10px;
     font-size: 25px;
     color: #808588;
   }
@@ -104,12 +104,24 @@
     color: #808588;
     padding: 20px;
     font-size: 2rem;
+    margin-right: 20px;
   }
 
+  .social-icons a {
+    text-decoration: none;
+    color: #808588;
+  }
+
+  .navinfo-title {
+    font-weight: bold;
+    color: #808588;
+  }
   .contact-info {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-align: center;
+    margin-right: 20px;
+    padding: 20px;
   }
 
   /* logo */
@@ -397,7 +409,7 @@
     position: relative;
   }
 
-  .contact-page{
+  .contact-page {
     padding: 10px;
     margin-bottom: 38px;
   }
@@ -479,13 +491,12 @@
   #footer {
     display: block;
     text-align: center;
-    padding: 5px;
+    padding: 10px;
     position: fixed;
     width: 100%;
     color: #808588;
     font-family: "Oswald", sans-serif;
     bottom: 0;
-    left: 0;
   }
 }
 
@@ -599,11 +610,17 @@
     color: #808588;
   }
 
+  .navinfo-title {
+    font-weight: bold;
+    color: #808588;
+  }
+
   .contact-info {
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-align: center;
     margin-right: 20px;
+    padding: 8px;
   }
 
   /* logo */
@@ -812,6 +829,14 @@
   div.social-icons a {
     text-decoration: none;
     color: #808588;
+  }
+
+  .contact-info {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-align: center;
+    margin-right: 20px;
+    padding: 8px;
   }
 
   .contact-info {
@@ -1037,6 +1062,14 @@
     font-family: "Oswald", sans-serif;
     font-size: 20px;
     text-align: center;
+    margin-right: 20px;
+    padding: 8px;
+  }
+
+  .contact-info {
+    font-family: "Oswald", sans-serif;
+    font-size: 20px;
+    text-align: center;
     margin-right: 28px;
   }
 
@@ -1253,11 +1286,13 @@
   /* ordering page */
 
   .menu {
-    position: relative;
+    position: relative; 
     display: flex;
     flex-direction: column;
     z-index: 0;
     justify-content: center;
+    margin-left: 33%;
+ 
   }
 
   .item-title {
@@ -1279,9 +1314,9 @@
     z-index: 0;
     box-shadow: 0px 0px 3px 1.5px rgba(1, 1, 121, 0.26);
     padding: 15px;
-    width: 50%;
+    width: 70%;
     margin: 10px;
-    margin-left: 32%;
+
     border: solid 1px rgba(0, 0, 0, 0.171);
   }
 
@@ -1427,6 +1462,15 @@
     box-shadow: 0px 0px 4px 0.5px white;
     background-color: transparent;
     color: white;
+  }
+
+  /* portfolio */
+
+  .portfolio-imgs{
+    width: 70%;
+    position: relative;
+    z-index: 0;
+    background: transparent;
   }
 }
 

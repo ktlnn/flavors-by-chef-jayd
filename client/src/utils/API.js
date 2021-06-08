@@ -2,11 +2,11 @@ import axios from "axios";
 
 const API = {
   getPortfolioImgs: function () {
-    return axios.get("/api/images");
+    return axios.get("/api/portfolio");
   },
 
-  getOutfits: function () {
-    return axios.get("/api/outfits");
+  getMenu: function () {
+    return axios.get("/api/menu");
   },
 
   getOutfit: function (id) {

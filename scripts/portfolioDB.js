@@ -22,11 +22,11 @@ const portfolio = [
     category: "food",
   },
   {
-    portfolioImage: "/assets/chicken.png",
+    portfolioImage: "/assets/steak.png",
     category: "food",
   },
   {
-    portfolioImage: "/assets/chicken.png",
+    portfolioImage: "/assets/seafood.png",
     category: "food",
   },
 ];

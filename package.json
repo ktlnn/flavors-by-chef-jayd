@@ -3,7 +3,6 @@
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
-
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
     "start:prod": "node server.js",
@@ -21,12 +20,21 @@
     "nodemon": "^1.18.7"
   },
   "dependencies": {
+    "ajv": "^8.6.0",
+    "async-retry": "^1.3.1",
+    "axios": "^0.18.0",
+    "bootstrap": "^4.5.3",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "http": "^0.0.1-security",
+    "micro": "^9.3.4",
+    "microrouter": "^3.1.3",
     "mongoose": "^5.12.11",
+    "nanoid": "^3.1.23",
+    "nedb": "^1.8.0",
     "nodemailer": "^6.6.1",
     "react-toastify": "^6.2.0",
-    "bootstrap": "^4.5.3",
-    "axios": "^0.18.0"
+    "serve-handler": "^6.1.3",
+    "square": "^11.0.0"
   }
 }

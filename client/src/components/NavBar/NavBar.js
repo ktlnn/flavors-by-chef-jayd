@@ -26,26 +26,40 @@ function NavBar() {
             </Link>
           </li>
           <div className="nav-menu-text">
-          {NavBarItems.map((item, index) => {
-           return <SubMenu className="nav-text" item={item} key={index} />
-         })}
+            {NavBarItems.map((item, index) => {
+              return <SubMenu className="nav-text" item={item} key={index} />;
+            })}
           </div>
-         
+
           <div className="social-icons">
             <li>
-              <a href="https://www.instagram.com/chef_jaydoshi/?hl=en" target="_blank" rel="noreferrer">
-              <AiIcons.AiOutlineInstagram />
+              <a
+                href="https://www.instagram.com/chef_jaydoshi/?hl=en"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiIcons.AiOutlineInstagram />
               </a>
             </li>
             <li>
-              <a href="mailto:orders@flavorsjayd.com" target="_blank" rel="noreferrer">
-              <AiIcons.AiOutlineMail />
-              </a> 
+              <a
+                href="mailto:orders@flavorsjayd.com"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <AiIcons.AiOutlineMail />
+              </a>
             </li>
           </div>
           <div className="contact-info">
-            <li>Address: 90 E Halsey Rd Ste 333 #1263 Parsippany NJ, 07054</li>
-            <li>Phone Number: (732) 447-6381</li>
+            <li>
+              <span className="navinfo-title">Address:</span> 90 E Halsey Rd Ste
+              333 #1263 Parsippany NJ, 07054
+            </li>
+            <li>
+              <span className="navinfo-title">Phone Number:</span> (732)
+              447-6381
+            </li>
           </div>
         </ul>
       </nav>
